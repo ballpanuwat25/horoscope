@@ -8,17 +8,98 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./css/home.css">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔮</text></svg>">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 <body>
     <div class="container">
         <div class="main_content">
             <h1 class="title">
-                เช็คดวงของคุณวันนี้ กับการพยากรณ์สุดแม่น!
+                เช็คดวงของคุณทันที กับการพยากรณ์สุดแม่น!
             </h1>
 
             <button class="cta" id="cta">มาเริ่มกันเลย!</button>
+        </div>
+
+        <div class="zodiac_content">
+            <h1 class="zodiac_title">เลือกราศีของคุณ</h1>
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="zodiac_item" data-zodiac="aries">
+                            <span>เมษ (21 มีนาคม – 19 เมษายน)</span>
+                            <span class="zodiac_icon">♈️</span>
+                        </div>
+                        <div class="zodiac_item" data-zodiac="taurus">
+                            <span>พฤษภ (20 เมษายน – 20 พฤษภาคม)</span>
+                            <span class="zodiac_icon">♉️</span>
+                        </div>
+                        <div class="zodiac_item" data-zodiac="gemini">
+                            <span>เมถุน (21 พฤษภาคม – 20 มิถุนายน)</span>
+                            <span class="zodiac_icon">♊️</span>
+                        </div>  
+                        <div class="zodiac_item" data-zodiac="cancer">
+                            <span>กรกฎ (21 มิถุนายน – 22 กรกฎาคม)</span>
+                            <span class="zodiac_icon">♋️</span>
+                        </div> 
+                        <div class="zodiac_item" data-zodiac="leo">
+                            <span>สิงห์ (23 กรกฎาคม – 22 สิงหาคม)</span>
+                            <span class="zodiac_icon">♌️</span>
+                        </div>
+                        <div class="zodiac_item" data-zodiac="virgo">
+                            <span>กันย์ (23 สิงหาคม – 22 กันยายน)</span>
+                            <span class="zodiac_icon">♍️</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="zodiac_item" data-zodiac="libra">
+                            <span>ตุลย์ (23 กันยายน – 22 ตุลาคม)</span>
+                            <span class="zodiac_icon">♎️</span>
+                        </div>
+                        <div class="zodiac_item" data-zodiac="scorpio">
+                            <span>พิจิก (23 ตุลาคม – 21 พฤศจิกายน)</span>
+                            <span class="zodiac_icon">♏️</span>
+                        </div>
+                        <div class="zodiac_item" data-zodiac="sagittarius">
+                            <span>ธนู (22 พฤศจิกายน – 21 ธันวาคม)</span>
+                            <span class="zodiac_icon">♐️</span>
+                        </div>
+                        <div class="zodiac_item" data-zodiac="capricorn">
+                            <span>มังกร (22 ธันวาคม – 19 มกราคม)</span>
+                            <span class="zodiac_icon">♑️</span>
+                        </div>
+                        <div class="zodiac_item" data-zodiac="aquarius">
+                            <span>กุมภ์ (20 มกราคม – 18 กุมภาพันธ์)</span>
+                            <span class="zodiac_icon">♒️</span>
+                        </div>
+                        <div class="zodiac_item" data-zodiac="pisces">
+                            <span>มีน (19 กุมภาพันธ์ – 20 มีนาคม)</span>
+                            <span class="zodiac_icon">♓️</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="result_content">
+            <div class="result_box">
+                <p class="result_text sub_title">ดวงของคุณคือดวงชะตาของคนสวย</p>
+                <p class="result_text head_list">ด้านความรัก:</p> 
+                <p class="result_text">ในช่วงนี้คุณจะพบหม๋าเด่กมาติดคุณงอมแงม อยากเจอคุณทุกวัน หม๋าเด่กของคุณเค้ารักคุณมาก เค้าจะคอยดูแลคุณอย่างดี และจะไม่ทิ้งคุณไปไหนแน่นอน เพราะคุณคือความสุข และคนสำคัญในชีวิตของเค้า หากคุณรู้สึกมั่นใจในตัวเค้าแล้ว สามารถขอเค้าเป็นแฟนด้วยลูกอม 2 เม็ดบาทได้เลย เค้ารอคุณอยู่ เค้ารอะอวดคุณกับทุกคนว่าเค้ามีแฟนที่โคตรจาสวยอ่า</p>
+                <p class="result_text head_list">ด้านการงาน:</p>
+                <p class="result_text">ถ้าคุณลาออกจากบริษัทเหี้ยๆที่ขึ้นตัวด้วย oris และลงท้ายด้วย ma ชีวิตคุณจะดีและมีความสุขขึ้นอีก 1,000%</p>
+                <p class="result_text head_list">ด้านการเงิน:</p>
+                <p class="result_text">ไม่รู้อ่าาา อันนี้พ่อหมอไม่ได้เรียนมา แต่ขอให้เดินเจอเงินตก 100 บาทระหว่างไปทำงานทุกวัน</p>
+            </div>
         </div>
         
         <div class="space_element">
@@ -29,13 +110,22 @@
 
             <div class="stars">
                 <div class="star"></div>
-                <div class="star"></div>
             </div>
 
             <div class="star_gif"></div>
         </div>
+
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <div class="modal_box">
+                    <h2 class="modal_text">จ๊ะเอ๋ตัวเอง ห้ามแอบดูของคนอื่นน้า</h2>
+                    <button class="submit_btn" id="submit">รู้แล้วน่าๆๆ</button>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="script.js"></script>
+    <script src="./js/swiper.js"></script>
 </body>
 </html>
