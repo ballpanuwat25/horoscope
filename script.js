@@ -1,6 +1,7 @@
 $(document).ready(function() {
     $('.zodiac_content').hide();
-    $('.result_content').hide();
+    $('#res1').hide();
+    $('#res2').hide();
     $('#myModal').hide();
 
     $('#cta').click(function() {
@@ -11,13 +12,16 @@ $(document).ready(function() {
 
     $('.zodiac_item').click(function() {
         var zodiacId = $(this).data('zodiac');
-        if(zodiacId != 'libra') {
-            console.log('You clicked on zodiac: ' + zodiacId);
-            $("#myModal").fadeIn(500);
-        } else {
+        if(zodiacId == 'libra') {
             $('.zodiac_content').fadeOut(500, function() {
-                $('.result_content').fadeIn(500);
+                $('#res2').fadeIn(500);
             });
+        } else if (zodiacId == 'gemini') {
+            $('.zodiac_content').fadeOut(500, function() {
+                $('#res1').fadeIn(500);
+            });
+        } else {
+            $("#myModal").fadeIn(500);
         }
     });
 
