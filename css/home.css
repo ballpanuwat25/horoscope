@@ -312,6 +312,25 @@ body {
     font-size: 22px;
 }
 
+.close_btn {
+    background-color: var(--primary-btn-color);
+    border: none;
+    outline: none;
+
+    margin-top: 20px;
+
+    padding: 12px 10px 5px 10px;
+    border-radius: 10px;
+
+    width: 100%;
+
+    font-size: 24px;
+    color: var(--secondary-text-color);
+    cursor: pointer;
+
+    z-index: 999;
+}
+
 @keyframes moveUpDown {
     0% { transform: translateY(0); }
     100% { transform: translateY(-10px); }

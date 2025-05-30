@@ -21,14 +21,30 @@ $(document).ready(function() {
             $('.zodiac_content').fadeOut(500, function() {
                 $('#res1').fadeIn(500);
             });
+
+            count++;
         } else {
             $("#myModal").fadeIn(500);
         }
-
-        count++;
     });
 
     $('#submit').click(function() {
         $("#myModal").fadeOut(500);
+    });
+
+    $('#close1').click(function() {
+        $("#res1").fadeOut(500);
+
+        $('.zodiac_content').fadeIn(500, function() {
+            count = 0; // Reset count when closing result
+        });
+    });
+
+    $('#close2').click(function() {
+        $("#res2").fadeOut(500);
+
+        $('.zodiac_content').fadeIn(500, function() {
+            count = 0; // Reset count when closing result
+        });
     });
 });
