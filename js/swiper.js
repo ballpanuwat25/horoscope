@@ -8,3 +8,11 @@ const swiper = new Swiper('.swiper', {
     el: '.swiper-pagination',
   },
 });
+
+$('#next').click(function() {
+    swiper.slideNext();
+});
+
+$('#prev').click(function() {
+    swiper.slidePrev();
+});
