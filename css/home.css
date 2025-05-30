@@ -159,6 +159,8 @@ body {
     align-items: center;
     flex-direction: column;
     z-index: 999 !important;
+
+    cursor: grab;
 }
 
 .swiper-wrapper {
@@ -175,6 +177,14 @@ body {
 
 .swiper-pagination-bullet {
   opacity: 1 !important;
+}
+
+.swiper-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .zodiac_title {
@@ -207,6 +217,15 @@ body {
 
     display: flex;
     justify-content: space-between;
+
+    cursor: pointer;
+
+    transition: all 0.3s;
+}
+
+.zodiac_item:hover {
+    background-color: #fff;
+    color: #303030;
 }
 
 .swiper-slide {
@@ -334,4 +353,16 @@ body {
 @keyframes moveUpDown {
     0% { transform: translateY(0); }
     100% { transform: translateY(-10px); }
+}
+
+@media screen and (min-width: 768px) {
+    .swiper-content, .modal_box, .result_box, .close_btn {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .swiper-content, .modal_box, .result_box, .close_btn {
+        width: 50%;
+    }
 }
