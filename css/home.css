@@ -349,7 +349,6 @@ body {
 .footer {
     margin-top: 10px;
     z-index: 999;
-    width: 100%;
 
     display: flex;
     justify-content: space-between;
@@ -361,7 +360,7 @@ body {
 
     border: none;
     outline: none;
-    
+
     border-radius: 16px;
 
     font-size: 16px;
@@ -379,6 +378,12 @@ body {
 @keyframes moveUpDown {
     0% { transform: translateY(0); }
     100% { transform: translateY(-10px); }
+}
+
+@media screen and (max-width: 767px) {
+    .footer {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 768px) {
